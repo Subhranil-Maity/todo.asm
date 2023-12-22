@@ -43,7 +43,9 @@ main:
 		mov qword [client_fd], rax
 		close [client_fd]
 		jmp main_loop
+		
 		close [server_fd]
+
 		log ok
 		exit 0
 error:
